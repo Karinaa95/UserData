@@ -40,23 +40,18 @@ public class Worker extends User {
         this.workExp = workExp;
     }
 
-    public boolean increaseSalary() {
-        boolean ok = false;
+    public void increaseSalary() {
         System.out.printf("%s %s worked %s years, salary before review was: %f\n", this.firstName, this.lastName, this.workExp, this.salary);
         if (this.workExp < 2) {
             this.salary += this.salary * 0.05;
             System.out.printf("%s %s worked %s years, salary after review is: %f\n", this.firstName, this.lastName, this.workExp, this.salary);
-            ok = true;
         } else if (this.workExp >= 2 && this.workExp <= 5) {
             this.salary += this.salary * 0.1;
             System.out.printf("%s %s worked %s years, salary after review is: %f\n", this.firstName, this.lastName, this.workExp, this.salary);
-            ok = true;
         } else if (this.workExp >= 5) {
             this.salary += this.salary * 0.15;
             System.out.printf("%s %s worked %s years, salary after review is: %f\n", this.firstName, this.lastName, this.workExp, this.salary);
-            ok = true;
         }
-        return ok;
     }
 
     @Override

@@ -35,21 +35,25 @@ public class Main {
         User user4 = new User("sdftest#gmail.com","user43s$df43kds");
         user3.displayInfo();
 
-        System.out.println("-------------------------- Creating new user --------------------------");
+        System.out.println("-------------------------- Creating new user worker1 --------------------------");
         Worker worker1 = new Worker("Worker1","Pupkin", "ipup.test@gmail.com", "+1762387923", "+1234523532524", "Worker1d", 100,1);
-        worker1.increaseSalary();
         worker1.displayInfo();
+        worker1.increaseSalary();
 
+
+        System.out.println("-------------------------- Update worker1 --------------------------");
         worker1.setWorkExp(2);
         worker1.setSalary(100);
         worker1.increaseSalary();
         worker1.displayInfo();
 
+        System.out.println("-------------------------- Update worker1 --------------------------");
         worker1.setWorkExp(5);
         worker1.setSalary(100);
         worker1.increaseSalary();
         worker1.displayInfo();
 
+        System.out.println("-------------------------- Update worker1 --------------------------");
         worker1.setWorkExp(7);
         worker1.setSalary(100);
         worker1.increaseSalary();
