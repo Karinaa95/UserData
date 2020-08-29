@@ -25,12 +25,12 @@ public class User {
     public String mobilePhone;
     public String password;
 
-    private boolean emailIsOk(String email) {
+    private boolean emailIsNotOk(String email) {
         char ch;
-        boolean ok = true;
+        boolean ok = false;
         for (int i=0; i<email.length();i++) {
             ch = email.charAt(i);
-            if (ch == '@') ok = false;
+            if (ch == '@') ok = true;
         }
         return ok;
     }
@@ -44,7 +44,7 @@ public class User {
     }
 
     User(String email, String password) {
-        if (this.emailIsOk(email)) {
+        if (this.emailIsNotOk(email)) {
             System.out.println("Email " + email + " is incorrect!");
         }
         if (!this.passwordIsOk(password)) System.out.println("Password is not correct: more then 16 or less then 8 symbols!");
@@ -57,7 +57,7 @@ public class User {
         this.password = password;
     }
     User(String firstName, String lastName, String email, String phone, String mobilePhone, String password) {
-        if (this.emailIsOk(email)) {
+        if (this.emailIsNotOk(email)) {
             System.out.println("Email " + email + " is incorrect!");
         }
         if (!this.passwordIsOk(password)) System.out.println("Password is not correct: more then 16 or less then 8 symbols!");
