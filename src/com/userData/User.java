@@ -57,6 +57,11 @@ public class User {
         this.password = password;
     }
     User(String firstName, String lastName, String email, String phone, String mobilePhone, String password) {
+        if (this.emailIsOk(email)) {
+            System.out.println("Email " + email + " is incorrect!");
+        }
+        if (!this.passwordIsOk(password)) System.out.println("Password is not correct: more then 16 or less then 8 symbols!");
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
