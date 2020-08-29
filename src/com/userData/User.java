@@ -72,6 +72,6 @@ public class User {
 
     void displayInfo(){
         System.out.printf("\n--- User Info ---\nfirstName: %s \tlastName: %s E-mail: %s \tPhone: %s \tMobile Phone: %s \tPassword: %s\n",
-                firstName, lastName, email, phone, mobilePhone, password);
+                this.firstName, this.lastName, this.email, this.phone, this.mobilePhone, this.password);
     }
 }
