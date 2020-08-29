@@ -28,7 +28,7 @@ public class Main {
         user2.displayInfo();
         User user3 = new User("sdftest#gmail.com", "46hfg%#$2d1233342");
         user3.displayInfo();
-        User user4 = new User();
+        User user4 = new User("sdftest#gmail.com","523423s$df43kds");
         user3.displayInfo();
 
         Worker worker1 = new Worker("Ivan","Pupkin", "ipup.test@gmail.com", "+1762387923", "+1234523532524", "73hd%#2d", 100,1);
