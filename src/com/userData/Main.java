@@ -22,16 +22,21 @@ import com.sun.corba.se.spi.orbutil.threadpool.Work;
 public class Main {
 
     public static void main(String[] args) {
-	    User user1 = new User("Ivan","Pupkin", "ipup.test@gmail.com", "+1762387923", "+1234523532524", "73hd%#2d");
+        System.out.println("-------------------------- Creating new user --------------------------");
+	    User user1 = new User("User1","Pupkin", "ipup.test@gmail.com", "+1762387923", "+1234523532524", "user1#2d");
 	    user1.displayInfo();
-        User user2 = new User("mestest@gmail.com", "46hfg%#$2d");
+        System.out.println("-------------------------- Creating new user --------------------------");
+        User user2 = new User("mestest@gmail.com", "user2%#$2d");
         user2.displayInfo();
-        User user3 = new User("sdftest#gmail.com", "46hfg%#$2d1233342");
+        System.out.println("-------------------------- Creating new user --------------------------");
+        User user3 = new User("sdftest#gmail.com", "user3%#$2d1233342");
         user3.displayInfo();
-        User user4 = new User("sdftest#gmail.com","523423s$df43kds");
+        System.out.println("-------------------------- Creating new user --------------------------");
+        User user4 = new User("sdftest#gmail.com","user43s$df43kds");
         user3.displayInfo();
 
-        Worker worker1 = new Worker("Ivan","Pupkin", "ipup.test@gmail.com", "+1762387923", "+1234523532524", "73hd%#2d", 100,1);
+        System.out.println("-------------------------- Creating new user --------------------------");
+        Worker worker1 = new Worker("Worker1","Pupkin", "ipup.test@gmail.com", "+1762387923", "+1234523532524", "Worker1d", 100,1);
         worker1.increaseSalary();
         worker1.displayInfo();
 
